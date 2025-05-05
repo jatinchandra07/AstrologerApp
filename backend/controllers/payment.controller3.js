@@ -432,7 +432,7 @@ export const getAppointments = async (req, res) => {
     console.error(error);
     return res
       .status(500)
-      .json({ success: false, error: "Internal Server Error" });
+      .json({ success:  false, error: "Internal Server Error" });
   }
 };
 
