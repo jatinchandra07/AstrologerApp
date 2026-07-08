@@ -156,7 +156,8 @@ export const sendEmailToAdminAfterSuccessfullPayment = async (
       time,
     } = paymentByUser;
     const transporter = nodemailer.createTransport({
-      host: "smtpout.secureserver.net",
+      host: "smtp.gmail.com",
+      // host: "smtpout.secureserver.net",
       port: 465, // or 587
       secure: true, // true for port 465, false for port 587
       auth: {
@@ -299,7 +300,8 @@ export const userWillgetEmailAfterSuccessfullPayment = async (
       time,
     } = paymentByUser;
     const transporter = nodemailer.createTransport({
-      host: "smtpout.secureserver.net",
+      // host: "smtpout.secureserver.net",
+      host: "smtp.gmail.com",
       port: 465, // or 587
       secure: true, // true for port 465, false for port 587
       auth: {
