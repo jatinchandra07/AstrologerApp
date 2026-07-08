@@ -152,7 +152,7 @@ export const sendEmailToAdminAfterSuccessfullPayment = async (
       service,
       mode,
       price,
-      date,
+      date, 
       time,
     } = paymentByUser;
     const transporter = nodemailer.createTransport({
