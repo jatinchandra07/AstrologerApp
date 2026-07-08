@@ -115,9 +115,9 @@ export const paymentVerification = async (req, res) => {
             }else {
               console.log("Email address not correct. Skipping email sending.");
             }
-            res.redirect(
-              `${process.env.VITE_HOST_URL_ENDPOINT_FOR_FRONTEND}/paymentsuccess?reference=${razorpay_payment_id}`
-            );
+                res.redirect(
+                  `${process.env.VITE_HOST_URL_ENDPOINT_FOR_FRONTEND}/paymentsuccess?reference=${razorpay_payment_id}`
+                );
           }
           else {
             return res
@@ -370,7 +370,7 @@ export const userWillgetEmailAfterSuccessfullPayment = async (
           </style>
         </head>
         <body>
-          <div class="container">
+          <div  class="container">
             <img
               src="https://cdn.pixabay.com/photo/2015/12/09/13/44/vector-1084755_1280.png"
               alt="Your Logo"

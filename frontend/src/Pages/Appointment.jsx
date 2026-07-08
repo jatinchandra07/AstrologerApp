@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import axios from "axios";
 import TopNavbar from "../components/TopNavbar";
 import BottomNavbar from "../components/BottomNavbar";
@@ -9,6 +9,13 @@ import logo from "../images/logo/logo.png";
 import { LuLoader2 } from "react-icons/lu";
 
 const Appointment = () => {
+  useEffect(() => {
+    if (window.gtag) {
+      window.gtag('event', 'conversion', {
+        send_to: 'AW-17143447091/KNelCNKc1tEaELP80O4_'
+      });
+    }
+  }, []);
   const numerologySubServices = {
     "Basic Report": 1100,
     "Mobile Numerology": 1499,
@@ -53,15 +60,15 @@ const Appointment = () => {
   };  
   const getPrice = (service, mode,subService) => {
     const prices = {
-      "Angelic Healing": { Online: 2100, Offline: 2500 },
+      "Angelic Healing": { Online: 1500, Offline: 2500 },
       "Animal Healing": { Online: 1111 },
-      "Aura and Chakra Scanning": { Online: 2100 },
-      "Face Reading": { Online: 2100, Offline: 2500 },
-      "Graphology": { Online: 2100, Offline: 2500 },
+      "Aura and Chakra Scanning": { Online: 1500 },
+      "Face Reading": { Online: 2100, Offline: 5100 },
+      "Graphology": { Online: 2100, Offline: 5100 },
       "Humkara with Haleem": { Online: 3333 },
-      "Kundali Analysis": { Online: 2100, Offline: 2500 },
-      "Lal Kitab": { Online: 2100, Offline: 2500 },
-      "Mediumship": { Offline: 2500 },
+      "Kundali Analysis": { Online: 2100, Offline: 5100 },
+      "Lal Kitab": { Online: 2100, Offline: 5100 },
+      "Mediumship": { Offline: 9000 },
       "Numerology": { Online: numerologySubServices[subService]|| 2000 },
       "Palmistry": { Online: 2100, Offline: 4100 },
       "Prashant Kundali": { Online: 2100, Offline: 2500 },
@@ -71,6 +78,7 @@ const Appointment = () => {
         "Offline - Delhi NCR": 5100,
         "Offline - Outside Delhi NCR": 11000,
       },
+      "Karma Kaand":{Online: 3000, Offline: 6000},
     };
   
     return prices[service]?.[mode] || "";
@@ -337,6 +345,7 @@ const Appointment = () => {
                   <option value="Animal Healing">Animal Healing</option>
                   <option value="Aura and Chakra Scanning">Aura and Chakra Scanning</option>
                   <option value="Palmistry">Palmistry</option>
+                  <option value="Karma Kaand">Karma Kaand</option>
                 </select>
               </div>
               {formData.service === "Numerology" && (

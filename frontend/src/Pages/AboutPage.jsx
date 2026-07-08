@@ -104,13 +104,6 @@ const AboutPage = () => {
             </p>
             <br />
             <p>
-              11. Certification Courses
-            </p>
-            <p>
-              Master sacred sciences like Tarot and Numerology through certified online courses designed for personal growth or professional practice.
-            </p>
-            <br />
-            <p>
               Guided by Masters
             </p>
             <br />

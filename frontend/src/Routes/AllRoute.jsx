@@ -21,6 +21,7 @@ import Graphology from "../Pages/FeaturedPageItem/Graphology";
 import LalKitab from "../Pages/FeaturedPageItem/Lal Kitab";
 import PrashnaKundali from "../Pages/FeaturedPageItem/Prashna Kundali";
 import Vastu from "../Pages/FeaturedPageItem/Vastu";
+import Karmakaand from "../Pages/FeaturedPageItem/Karm Kaand";
 
 const AllRoute = () => {
   return (
@@ -55,6 +56,7 @@ const AllRoute = () => {
       <Route path="/Lal-Kitab" element={<LalKitab/>}/>
       <Route path="/Prashna-Kundali" element={<PrashnaKundali/>}/>
       <Route path="/Vastu" element={<Vastu/>}/>
+      <Route path="/Karmakaand" element={<Karmakaand/>}/>
     </Routes>
   );
 };

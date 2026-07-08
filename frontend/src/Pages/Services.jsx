@@ -16,6 +16,7 @@ import feature11 from "../images/service-images/feature11.jpg";
 import feature12 from "../images/service-images/feature12.jpg";
 import feature13 from "../images/service-images/feature13.jpg";
 import feature14 from "../images/service-images/feature14.jpg";
+import feature15 from "../images/service-images/feature15.jpg";
 import { Link } from "react-router-dom";
 
 const Services = () => {
@@ -300,6 +301,29 @@ const Services = () => {
         "Maximizing natural light and ventilation",
       paragraph8:
         "Vastu is often consulted during home buying, interior design, and renovations to attract positive energy and dispel negativity. Though traditional in nature, many modern architects and interior designers incorporate Vastu elements into contemporary designs.",
+    },
+    {
+      id: 15,
+      image: feature15,
+      HeadText: "Karm Kaand",
+      paragraph1:
+        "We offer authentic Vedic Karma Kand services to help you clear energetic blockages, seek divine blessings, and realign with your spiritual path. Whether you're facing challenges in health, finances, relationships, or spiritual growth, Karma Kand rituals can bring balance, protection, and peace into your life.",
+      paragraph2:
+        "Boon Your Karma Kand Ritual to",
+      paragraph3: 
+        "• Remove doshas like Pitru Dosh, Kaal Sarp Dosh, Graha Dosh",
+      paragraph4:
+        "• Perform ancestral rituals (Shraddha, Pind Daan, Tarpan)",
+      paragraph5:
+        "• Invoke divine blessings  through Havan, Rudrabhishek, and Jaaps",
+      paragraph6:
+        "• Ensure harmony during life events like Griha Pravesh, Naamkaran, Vivah",
+      paragraph7:
+        "• Enhance prosperity, peace, and spiritual well-being",
+      paragraph8:
+        "We offer personalized consultation to choose the right ritual. Online & in-person options available.",
+      paragraph9:
+        "Once the Ritual is selected detailed benefit and expense would be given and the Ritual will be performed on the chosen place and date.",
     },
   ];
 

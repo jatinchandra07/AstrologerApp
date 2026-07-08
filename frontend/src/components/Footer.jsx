@@ -80,6 +80,10 @@ const Footer = () => {
             <Link to="/Vastu">
               <li className="">Vastu</li>
             </Link>
+            <hr className="border border-s-violet-400 border-gray-300 my-2 m-auto" />
+             <Link to="/KarmaKaand">
+              <li className="">Karma Kaand</li>
+            </Link>
           </ul>
         </div>
         <div>
@@ -118,7 +122,7 @@ const Footer = () => {
             <p>Gurugram, India</p>
             <p>Email: support@mahakaalcosmicportal.com</p>
             <p>Phone: +91 87504 73671</p>
-            <p>Phone: +91 96257 41259</p>
+            <p>Phone: +91 92663 42462</p>
           </div>
           {/* Social icons div here */}
           <div className="flex justify-between md:ml-2 lg:ml-2 w-[150px] m-auto mt-[70px]">

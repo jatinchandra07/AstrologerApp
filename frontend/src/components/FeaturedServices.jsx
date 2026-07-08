@@ -17,6 +17,7 @@ import feature11 from "../images/service-images/feature11.jpg";
 import feature12 from "../images/service-images/feature12.jpg";
 import feature13 from "../images/service-images/feature13.jpg";
 import feature14 from "../images/service-images/feature14.jpg";
+import feature15 from "../images/service-images/feature15.jpg";
 import ClientStories from "./ClientStories";
 import { Link } from "react-router-dom";
 
@@ -120,9 +121,16 @@ const FeaturedServices = () => {
       paragraph:
         "",
     },
+    {
+      image: feature15,
+      navigatePath: "KarmaKaand",
+      HeadText: "Karma Kaand",
+      paragraph:
+        "",
+    },
   ];
 
-  const [isFlippedArray, setIsFlippedArray] = useState(Array(14).fill(false));
+  const [isFlippedArray, setIsFlippedArray] = useState(Array(15 ).fill(false));
 
   const handleFlip = (index) => {
     const updatedArray = [...isFlippedArray];
